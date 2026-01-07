@@ -4,7 +4,6 @@ from sqlalchemy import create_engine, text
 import os
 from dotenv import load_dotenv
 
-# Load config
 load_dotenv('/Users/amineouhiba/Desktop/streaming-bi-project/config/db_config.env')
 
 PGHOST = os.getenv("PGHOST")

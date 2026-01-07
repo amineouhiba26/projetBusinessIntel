@@ -11,7 +11,6 @@ PGDATABASE = os.getenv("PGDATABASE")
 PGUSER = os.getenv("PGUSER")
 PGPASSWORD = os.getenv("PGPASSWORD")
 
-# Connexion - remove future parameter
 engine = create_engine(
     f'postgresql+psycopg2://{PGUSER}:{PGPASSWORD}@{PGHOST}:{PGPORT}/{PGDATABASE}'
 )

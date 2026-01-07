@@ -1,4 +1,3 @@
--- DIM MOVIE
 CREATE TABLE IF NOT EXISTS dim_movie (
     movie_id INT PRIMARY KEY,
     title TEXT,
@@ -6,7 +5,6 @@ CREATE TABLE IF NOT EXISTS dim_movie (
     release_year INT
 );
 
--- DIM USER
 CREATE TABLE IF NOT EXISTS dim_user (
     user_id INT PRIMARY KEY,
     gender TEXT,
@@ -14,7 +12,6 @@ CREATE TABLE IF NOT EXISTS dim_user (
     age_group TEXT
 );
 
--- DIM DATE
 CREATE TABLE IF NOT EXISTS dim_date (
     date_id INT PRIMARY KEY,
     date DATE,
@@ -24,7 +21,6 @@ CREATE TABLE IF NOT EXISTS dim_date (
     weekday TEXT
 );
 
--- FACT TABLE
 CREATE TABLE IF NOT EXISTS fact_views (
     movie_id INT,
     user_id INT,

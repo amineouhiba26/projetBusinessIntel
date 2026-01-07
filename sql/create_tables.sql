@@ -1,4 +1,3 @@
--- Dimension Movie
 CREATE TABLE movie (
     movie_id BIGINT PRIMARY KEY,
     title TEXT NOT NULL,
@@ -6,7 +5,6 @@ CREATE TABLE movie (
     year INT
 );
 
--- Dimension User
 CREATE TABLE users (
     user_id TEXT PRIMARY KEY,
     name TEXT NOT NULL,
@@ -14,7 +12,6 @@ CREATE TABLE users (
     country TEXT
 );
 
--- Dimension Date
 CREATE TABLE date_dim (
     date_id SERIAL PRIMARY KEY,
     date DATE NOT NULL UNIQUE,
@@ -24,7 +21,6 @@ CREATE TABLE date_dim (
     weekday TEXT
 );
 
--- Table de faits Views
 CREATE TABLE views (
     view_id SERIAL PRIMARY KEY,
     user_id TEXT REFERENCES users(user_id),
